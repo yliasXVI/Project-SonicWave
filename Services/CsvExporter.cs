@@ -1,4 +1,4 @@
-using System.Collection.Generic;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -34,7 +34,7 @@ namespace ProjectSonicWave.Services
 
     public static void ExportGroupMembers(string path, IList<GroupMemberDto> items)
         {
-            Write(path, new[] { "Displayname", "PrimarySmtpAddress", "RecipientType"}, item.Select (m => new[]
+            Write(path, new[] { "Displayname", "PrimarySmtpAddress", "RecipientType"}, items.Select (m => new[]
             {
                 m.DisplayName,
                 m.PrimarySmtpAddress,
