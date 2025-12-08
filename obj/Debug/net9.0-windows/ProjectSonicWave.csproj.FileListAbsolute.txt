@@ -1,0 +1,6 @@
+C:\Users\y.kok\OneDrive - Veldwerk\Documenten\Ylias_Gemaakt\Project-SonicWave\obj\Debug\net9.0-windows\ProjectSonicWave.csproj.AssemblyReference.cache
+C:\Users\y.kok\OneDrive - Veldwerk\Documenten\Ylias_Gemaakt\Project-SonicWave\obj\Debug\net9.0-windows\ProjectSonicWave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\y.kok\OneDrive - Veldwerk\Documenten\Ylias_Gemaakt\Project-SonicWave\obj\Debug\net9.0-windows\ProjectSonicWave.AssemblyInfoInputs.cache
+C:\Users\y.kok\OneDrive - Veldwerk\Documenten\Ylias_Gemaakt\Project-SonicWave\obj\Debug\net9.0-windows\ProjectSonicWave.AssemblyInfo.cs
+C:\Users\y.kok\OneDrive - Veldwerk\Documenten\Ylias_Gemaakt\Project-SonicWave\obj\Debug\net9.0-windows\ProjectSonicWave.csproj.CoreCompileInputs.cache
+C:\Users\y.kok\OneDrive - Veldwerk\Documenten\Ylias_Gemaakt\Project-SonicWave\obj\Debug\net9.0-windows\ProjectSonicWave.sourcelink.json
