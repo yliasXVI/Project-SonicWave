@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectSonicWave")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01883a586ea4afa168c90fcada9303504d180482")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c82e554dd2fbb3909351b5e3db2b829f2ac95d47")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectSonicWave")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectSonicWave")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
