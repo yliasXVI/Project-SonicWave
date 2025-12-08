@@ -42,7 +42,7 @@ namespace ProjectSonicWave.Services
 
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
-            var iss = InitialSessionState.CreateDefault();
+            var iss = InitialSessionState.CreateDefault2();
 
             _runspace = RunspaceFactory.CreateRunspace(iss);
 
