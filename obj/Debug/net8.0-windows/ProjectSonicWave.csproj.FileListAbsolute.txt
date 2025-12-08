@@ -1,0 +1,5 @@
+/home/runner/work/Project-SonicWave/Project-SonicWave/obj/Debug/net8.0-windows/ProjectSonicWave.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/Project-SonicWave/Project-SonicWave/obj/Debug/net8.0-windows/ProjectSonicWave.AssemblyInfoInputs.cache
+/home/runner/work/Project-SonicWave/Project-SonicWave/obj/Debug/net8.0-windows/ProjectSonicWave.AssemblyInfo.cs
+/home/runner/work/Project-SonicWave/Project-SonicWave/obj/Debug/net8.0-windows/ProjectSonicWave.csproj.CoreCompileInputs.cache
+/home/runner/work/Project-SonicWave/Project-SonicWave/obj/Debug/net8.0-windows/ProjectSonicWave.sourcelink.json
