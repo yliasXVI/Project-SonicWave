@@ -6,5 +6,7 @@ namespace ProjectSonicWave.Models
       public string? PrimarySmtpAddress { get; set; }
       public string? RecipientTypeDetails { get; set; }
       public string? Database { get; set; }
+      public string? TotalItemSize { get; set; }
+      public string? ItemCount { get; set; }
     }
 }

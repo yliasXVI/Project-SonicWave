@@ -50,9 +50,7 @@ namespace ProjectSonicWave.Services
                 u.Mail,
                 u.JobTitle,
                 u.Department,
-                
-                string.Join(" | ", u.Licenses.Select(l => $"{l.SkuPartNumber}: {l.ServicePlans}"))
-                
+                u.Licenses
             }));
         }
 
@@ -67,8 +65,8 @@ namespace ProjectSonicWave.Services
         {
             if (s == null) return "";
             var needs = s.Contains(',') || s.Contains('"') || s.Contains('\n');
-            s.Replace("\"", "\"\"");
-            return needs ? $"\"{t}\"" : t;
+            s = s.Replace("\"", "\"\"");
+            return needs ? $"\"{s}\"" : s;
         }
 
     }

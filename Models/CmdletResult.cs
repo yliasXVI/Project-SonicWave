@@ -6,7 +6,7 @@ namespace ProjectSonicWave.Models
     public sealed class CmdletResult
     {
         public IReadOnlyList<PSObject> Output { get; }
-        public IReadOnlyList<ErrorRecord> Errors { get; }
+        public IReadOnlyList<PsErrorInfo> Errors { get; }
 
         public bool HasErrors => Errors.Count > 0;
         public CmdletResult(IReadOnlyList<PSObject> output, IReadOnlyList<PsErrorInfo> errors)
