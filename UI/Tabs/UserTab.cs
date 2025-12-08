@@ -6,7 +6,7 @@ namespace ProjectSonicWave.UI.Tabs
     /// Placeholder voor Users; later uitbreiden met Get-MgUser en licenties
     /// </summary>
     
-    public class Userstab() : UserControl
+    public class UsersTab : UserControl
     {
         public UsersTab()
         {
