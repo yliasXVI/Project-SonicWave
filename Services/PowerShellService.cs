@@ -222,6 +222,108 @@ namespace ProjectSonicWave.Services
 
         }
 
+        public async Task<IReadOnlyList<GroupDto>> GetGroupsAsync(CancellationToken ct = default)
+
+        {
+
+            var result = await RunGetCommandAsync("Get-DistributionGroup", null, ct).ConfigureAwait(false);
+
+            var list = new List<GroupDto>();
+
+            foreach (var o in result.Output)
+
+            {
+
+                list.Add(new GroupDto
+
+                {
+
+                    DisplayName = o.Properties["DisplayName"]?.Value?.ToString() ?? string.Empty,
+
+                    PrimarySmtpAddress = o.Properties["PrimarySmtpAddress"]?.Value?.ToString() ?? string.Empty,
+
+                    Identity = o.Properties["Identity"]?.Value?.ToString() ?? string.Empty,
+
+                    GroupType = o.Properties["GroupType"]?.Value?.ToString() ?? string.Empty
+
+                });
+
+            }
+
+            return list;
+
+        }
+
+        public async Task<IReadOnlyList<GroupMemberDto>> GetGroupMembersAsync(string identity, CancellationToken ct = default)
+
+        {
+
+            var parameters = new Dictionary<string, object?> { { "Identity", identity } };
+
+            var result = await RunGetCommandAsync("Get-DistributionGroupMember", parameters, ct).ConfigureAwait(false);
+
+            var list = new List<GroupMemberDto>();
+
+            foreach (var o in result.Output)
+
+            {
+
+                list.Add(new GroupMemberDto
+
+                {
+
+                    DisplayName = o.Properties["DisplayName"]?.Value?.ToString() ?? string.Empty,
+
+                    PrimarySmtpAddress = o.Properties["PrimarySmtpAddress"]?.Value?.ToString() ?? string.Empty,
+
+                    RecipientType = o.Properties["RecipientType"]?.Value?.ToString() ?? string.Empty
+
+                });
+
+            }
+
+            return list;
+
+        }
+
+        public async Task<IReadOnlyList<UserDto>> GetUsersAsync(string filter, CancellationToken ct = default)
+
+        {
+
+            var parameters = string.IsNullOrEmpty(filter) ? null : new Dictionary<string, object?> { { "Filter", filter } };
+
+            var result = await RunGetCommandAsync("Get-MgUser", parameters, ct).ConfigureAwait(false);
+
+            var list = new List<UserDto>();
+
+            foreach (var o in result.Output)
+
+            {
+
+                list.Add(new UserDto
+
+                {
+
+                    DisplayName = o.Properties["DisplayName"]?.Value?.ToString() ?? string.Empty,
+
+                    UserPrincipalName = o.Properties["UserPrincipalName"]?.Value?.ToString() ?? string.Empty,
+
+                    Mail = o.Properties["Mail"]?.Value?.ToString() ?? string.Empty,
+
+                    JobTitle = o.Properties["JobTitle"]?.Value?.ToString() ?? string.Empty,
+
+                    Department = o.Properties["Department"]?.Value?.ToString() ?? string.Empty,
+
+                    Licenses = string.Empty // Would need Get-MgUserLicenseDetail for actual data
+
+                });
+
+            }
+
+            return list;
+
+        }
+
         public void Dispose()
 
         {
